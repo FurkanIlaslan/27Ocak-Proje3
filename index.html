@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Ders-7 Proje-1</title>
+
+    <!-- ! External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Hava Durumu Uygulaması</h1>
+            <input id="searchInput" type="text" placeholder="Şehir giriniz..."> <br>
+            <button id="searchBtn" type="button">Ara</button>
+        </div>
+
+        <div id="content">
+            <div id="city"></div>
+            <div id="temp"></div>
+            <div id="desc"></div>
+            <div id="minmax"></div>
+        </div>
+    </div>
+
+
+    <!-- ! External JS -->
+    <script src="script.js"></script>
+
+    <!-- ! İlk -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+
+    <!-- ! İkinci -->
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds.min.js"></script>
+
+    <script>
+        VANTA.CLOUDS({
+          el: "body",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          skyColor: 0xd768b6,
+          cloudColor: 0xaddec4,
+          sunColor: 0xff5b18,
+          speed: 1.90
+        })
+        </script>
+</body>
+</html>
